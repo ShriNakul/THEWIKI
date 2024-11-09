@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shri Creates</title>
+    <style>
+        body {
+            background-color: rgb(155, 230, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto; /* Center horizontally */
+            text-align: center; /* Center text within container */
+        }
+        .p1 {
+            font-size: 35px; /* Increase font size */
+        }
+        .p2 {
+            font-size: 50px; /* Increase font size */
+        }
+        .p3 {
+            font-size: 20px; /* Increase font size */
+        }
+        img {
+            display: block;
+            margin: 0 auto; /* Center images horizontally */
+            max-width: 100%;
+        }
+        .w3-content {
+            max-width: 500px;
+            margin: 0 auto; /* Center horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="p2">Shri Creates</h1>
+        <p class="p1">An online clothing store selling cool and custom clothes for all. <br>
+        From sports-themed to palm trees, we will create your dream clothes!</p>
+
+        <!-- Your slideshow code here -->
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="brain-art.webp" style="width:100%">
+            <img class="mySlides" src="bdbdbddbdbd.avif" style="width:100%">
+            <img class="mySlides" src="gfhfghfh.avif" style="width:100%">
+        </div>
+
+        <h2 class="p1">Shirt Library</h2>
+        <p class="p3">If you do not want a custom one, you can see my cool original creations!</p>
+        <a class="p3" href="mailto:shrinakul410@gmail.com">Send me an email if you want a custom or original shirt (click me)</a>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1; }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
